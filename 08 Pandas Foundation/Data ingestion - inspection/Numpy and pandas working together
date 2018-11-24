@@ -1,0 +1,27 @@
+EXERCISE
+
+# # Instruction:
+- Import numpy using the standard alias np.
+- Assign the numerical values in the DataFrame df to an array np_vals using the attribute values.
+- Pass np_vals into the NumPy method log10() and store the results in np_vals_log10.
+- Pass the entire df DataFrame into the NumPy method log10() and store the results in df_log10.
+- Inspect the output of the print() code to see the type() of the variables that you created.
+
+
+# # Solution 
+
+# Import numpy
+import numpy as np
+
+# Create array of DataFrame values: np_vals
+np_vals = df.values
+
+# Create new array of base 10 logarithm values: np_vals_log10
+np_vals_log10 = np.log10(np_vals)
+
+# Create array of new DataFrame by passing df to np.log10(): df_log10
+df_log10 = np.log10(df)
+
+# Print original and new data containers
+print(type(np_vals), type(np_vals_log10))
+print(type(df), type(df_log10))
