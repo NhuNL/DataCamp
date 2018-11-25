@@ -1,0 +1,13 @@
+## Instruction
+
+- Create a list of new column labels with 'year', 'artist', 'song', 'chart weeks', and assign it to list_labels.
+- Assign your list of labels to df.columns
+
+
+## Solution
+
+# Build a list of labels: list_labels
+list_labels = ['year', 'artist', 'song', 'chart weeks']
+
+# Assign the list of labels to the columns attribute: df.columns
+df.columns = list_labels
